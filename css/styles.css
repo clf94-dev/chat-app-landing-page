@@ -5,6 +5,7 @@ body {
 }
 
 body .row .col-lg-6 .phone-cont {
+  opacity: 0;
   height: 630px;
   width: 330px;
   background-color: white;
@@ -150,7 +151,7 @@ body .row .col-lg-6 .phone-cont .int-phone-cont .content .option {
 body .row .col-lg-6 .phone-cont .int-phone-cont .content .option .option-row {
   position: relative;
   top: 3px;
-  padding: 5px;
+  margin-left: 1px;
 }
 
 body .row .col-lg-6 .phone-cont .int-phone-cont .content .option .option-row h5 {
@@ -159,17 +160,27 @@ body .row .col-lg-6 .phone-cont .int-phone-cont .content .option .option-row h5 
   font-size: 12px;
 }
 
+body .row .col-lg-6 .phone-cont .int-phone-cont .content .option .option-row .title {
+  padding-top: 12px;
+  margin-right: 20px;
+}
+
+body .row .col-lg-6 .phone-cont .int-phone-cont .content .option .option-row .title1h {
+  margin-right: 45px;
+}
+
 body .row .col-lg-6 .phone-cont .int-phone-cont .content .option .option-row .price {
   font-size: 25px;
 }
 
-body .row .col-lg-6 .phone-cont .int-phone-cont .content .option .option-row .btn {
-  text-align: center;
+body .row .col-lg-6 .phone-cont .int-phone-cont .content .option .option-row .round-btn {
+  margin-top: 8px;
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   border: 1px solid #e570ff;
+  margin-right: 8px;
 }
 
 body .row .col-lg-6 .phone-cont .int-phone-cont .content .input-message {
@@ -214,8 +225,9 @@ body .row .col-lg-6 .text-cont {
 
 body .row .col-lg-6 .text-cont h1 {
   color: #3e2753;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 700;
+  margin-bottom: 5%;
 }
 
 body .row .col-lg-6 .text-cont h3 {

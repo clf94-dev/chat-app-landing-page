@@ -23,6 +23,7 @@
         .row {
             .col-lg-6 {
                 .phone-cont {
+                    opacity: 0;
                     height: 630px;
                     width: 330px;
                     background-color: $b-white;
@@ -143,22 +144,30 @@
                                 .option-row {
                                     position: relative;
                                     top: 3px;
-                                    padding: 5px;
+                                    margin-left: 1px;
                                     h5 {
                                         text-align: center;
                                         padding: 5px;
                                         font-size: 12px;
                                     }
+                                    .title {
+                                        padding-top: 12px;
+                                        margin-right: 20px;
+                                    }
+                                    .title1h {
+                                        margin-right: 45px;
+                                    }
                                     .price {
                                         font-size: 25px;
                                     }
-                                    .btn {
-                                        text-align: center;
+                                    .round-btn {
+                                        margin-top: 8px;
                                         display: block;
-                                        height: 30px;
-                                        width: 30px;
+                                        height: 20px;
+                                        width: 20px;
                                         border-radius: 50%;
                                         border: 1px solid $b-very-light-magenta-radio;
+                                        margin-right: 8px;
                                     }
                                 }
                             }
@@ -201,8 +210,9 @@
                     text-align: left;
                     h1 {
                         color: $very-dark-desatviolet;
-                        font-size: 35px;
+                        font-size: 45px;
                         font-weight: $font-weight7;
+                        margin-bottom: 5%;
                     }
                     h3 {
                         color: $dark-grayish-violet;

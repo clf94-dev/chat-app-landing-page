@@ -206,6 +206,7 @@ body .row .col-lg-6 .phone-cont .int-phone-cont .content .input-message .row .bt
 body .row .col-lg-6 .text-cont {
   margin: auto;
   padding-top: 25%;
+  padding-bottom: 25%;
   padding-right: 25%;
   text-align: left;
 }
@@ -221,3 +222,10 @@ body .row .col-lg-6 .text-cont h3 {
   font-size: 22px;
   font-weight: 400;
 }
+
+/*
+    @media screen and (max-width:400px) {
+        .text-cont {
+            padding-bottom: 154px;
+        }
+    }*/

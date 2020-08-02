@@ -87,6 +87,7 @@
                             .message {
                                 width: 200px;
                                 margin: 10px auto;
+                                opacity: 0;
                             }
                             .message-left {
                                 position: relative;
@@ -210,6 +211,28 @@
                     }
                 }
             }
+        }
+    }
+    
+    .fade-in {
+        animation: fadeIn ease 1s;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-moz-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
         }
     }
     /*

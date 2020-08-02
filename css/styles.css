@@ -82,6 +82,7 @@ body .row .col-lg-6 .phone-cont .int-phone-cont .content .top-bar .row h6 {
 body .row .col-lg-6 .phone-cont .int-phone-cont .content .message {
   width: 200px;
   margin: 10px auto;
+  opacity: 0;
 }
 
 body .row .col-lg-6 .phone-cont .int-phone-cont .content .message-left {
@@ -221,6 +222,28 @@ body .row .col-lg-6 .text-cont h3 {
   color: #a39daa;
   font-size: 22px;
   font-weight: 400;
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*

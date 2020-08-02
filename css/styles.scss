@@ -1,146 +1,211 @@
-.row {
-    .col-lg-6 {
-        .phone-cont {
-            height: 630px;
-            width: 330px;
-            background-color: blue;
-            z-index: 2;
-            align-items: center;
-            border-radius: 40px;
-            &::before {
-                height: 800px;
-                width: 400px;
-                border-bottom-left-radius: 200px;
-                border-bottom-right-radius: 200px;
-                background-color: lightcoral;
-                z-index: 1;
-            }
-            .int-phone-cont {
-                border-radius: 30px;
-                position: relative;
-                top: 12px;
-                height: 600px;
-                width: 300px;
-                background-color: lightblue;
-                z-index: 3;
-                .content {
+$pale-violet:hsl(276, 100%, 81%);
+$moderate-violet:hsl(276, 55%, 52%);
+$desaturated-dark-violet:hsl(271, 15%, 43%);
+$grayish-blue: hsl(206, 6%, 79%);
+$very-dark-desatviolet:hsl(271, 36%, 24%);
+$dark-grayish-violet:hsl(270, 7%, 64%);
+$g-light-magenta:hsl(293, 100%, 63%);
+$g-light-violet:hsl(264, 100%, 61%);
+$b-white: hsl(0, 0%, 100%);
+$b-light-grayish-violet:hsl(270, 20%, 96%);
+$b-very-dark-desaturated-violet:hsl(271, 36%, 24%);
+$b-very-light-magenta-radio:hsl(289, 100%, 72%);
+$font-family:'Rubik',
+sans-serif;
+$font-weight4:400;
+$font-weight5:500;
+$font-weight7:700;
+//-----------------------------------------
+body {
+    background-color: $b-light-grayish-violet;
+    padding-top: 50px;
+    font-family: $font-family;
+    .row {
+        .col-lg-6 {
+            .phone-cont {
+                height: 630px;
+                width: 330px;
+                background-color: $b-white;
+                z-index: 2;
+                align-items: center;
+                border-radius: 40px;
+                &::before {
+                    height: 800px;
+                    width: 400px;
+                    border-bottom-left-radius: 200px;
+                    border-bottom-right-radius: 200px;
+                    background-color: lightcoral;
+                    z-index: 1;
+                }
+                .int-phone-cont {
+                    border-radius: 30px;
                     position: relative;
-                    left: -30px;
-                    .top-bar {
-                        z-index: 4;
-                        width: 300px;
-                        height: 100px;
-                        text-align: center;
-                        background-color: red;
-                        border-top-left-radius: 30px;
-                        border-top-right-radius: 30px;
-                        border-bottom-left-radius: 5px;
-                        border-bottom-right-radius: 5px;
-                        .top-notch {
-                            border-bottom-left-radius: 20px;
-                            border-bottom-right-radius: 20px;
-                            margin-top: 0;
-                            background-color: blue;
-                            z-index: 5;
-                            height: 25px;
-                            width: 150px;
-                        }
-                        .row {
-                            color: white;
-                            img {
-                                height: 40px;
-                                width: 40px;
+                    top: 12px;
+                    height: 600px;
+                    width: 300px;
+                    background-color: $b-light-grayish-violet;
+                    z-index: 3;
+                    .content {
+                        position: relative;
+                        left: -30px;
+                        .top-bar {
+                            z-index: 4;
+                            width: 300px;
+                            height: 90px;
+                            text-align: left;
+                            background-image: linear-gradient(to right, $g-light-violet, $g-light-magenta);
+                            border-top-left-radius: 30px;
+                            border-top-right-radius: 30px;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            .top-notch {
+                                border-bottom-left-radius: 20px;
+                                border-bottom-right-radius: 20px;
+                                margin-top: 0;
+                                background-color: $b-white;
+                                z-index: 5;
+                                height: 25px;
+                                width: 150px;
+                            }
+                            .row {
+                                margin-top: 10px;
+                                margin-left: 15px;
+                                color: white;
+                                img {
+                                    height: 40px;
+                                    width: 40px;
+                                    border-radius: 20px;
+                                }
+                                h4 {
+                                    font-size: 18px;
+                                }
+                                h6 {
+                                    font-size: 10px;
+                                }
                             }
                         }
-                    }
-                    .message {
-                        width: 200px;
-                        margin: 10px auto;
-                    }
-                    .message-left {
-                        position: relative;
-                        left: -15px;
-                        background-color: purple;
-                        color: white;
-                        border-bottom-right-radius: 20px;
-                        border-top-left-radius: 20px;
-                        border-bottom-left-radius: 5px;
-                        border-top-right-radius: 20px;
-                        h5 {
-                            padding: 7px 3px;
-                            font-size: 12px;
+                        .message {
+                            width: 200px;
+                            margin: 10px auto;
                         }
-                        .option-row {
+                        .message-left {
                             position: relative;
-                            top: 3px;
-                            padding: 5px;
+                            left: -15px;
+                            background-color: $pale-violet;
+                            color: $moderate-violet;
+                            border-bottom-right-radius: 20px;
+                            border-top-left-radius: 20px;
+                            border-bottom-left-radius: 5px;
+                            border-top-right-radius: 20px;
                             h5 {
-                                padding: 9px;
+                                padding: 5px 3px;
                                 font-size: 12px;
                             }
-                            .btn {
-                                display: block;
-                                height: 30px;
-                                width: 30px;
-                                border-radius: 50%;
-                                border: 1px solid red;
-                            }
                         }
-                    }
-                    .message-right-text {
-                        background-color: orange;
-                    }
-                    .message-right-first {
-                        margin-top: 20px;
-                    }
-                    .message-right-last {
-                        margin-bottom: 20px;
-                    }
-                    .message-right {
-                        position: relative;
-                        right: -75px;
-                        border-bottom-right-radius: 5px;
-                        border-top-left-radius: 20px;
-                        border-bottom-left-radius: 20px;
-                        border-top-right-radius: 20px;
-                        h5 {
-                            padding: 7px 3px;
-                            font-size: 12px;
+                        .message-right-text {
+                            color: $desaturated-dark-violet;
                         }
-                        .row {
-                            img {
-                                margin: auto 8px;
-                                height: 50px;
-                                width: 50px;
-                                border-radius: 10px;
-                            }
+                        .message-right-first {
+                            margin-top: 15px;
                         }
-                    }
-                    .input-message {
-                        width: 280px;
-                        position: relative;
-                        top: 40px;
-                        left: 10px;
-                        background-color: white;
-                        height: 40px;
-                        border-radius: 20px;
-                        .row {
-                            padding-top: 5px;
-                            margin-left: 20px;
+                        .message-right-last {
+                            margin-bottom: 15px;
+                        }
+                        .message-right {
+                            position: relative;
+                            right: -75px;
+                            background-color: $b-white;
+                            border-bottom-right-radius: 5px;
+                            border-top-left-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                            border-top-right-radius: 20px;
                             h5 {
-                                color: gray;
+                                padding: 5px 3px;
+                                font-size: 12px;
                             }
-                            .btn {
-                                margin-left: 50px;
-                                display: block;
-                                background-color: black;
-                                height: 30px;
-                                width: 30px;
-                                border-radius: 50%;
-                                border: 1px solid black;
+                            .row {
+                                background-color: $b-light-grayish-violet;
+                                img {
+                                    margin: auto 8px;
+                                    height: 50px;
+                                    width: 50px;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                        .option {
+                            position: relative;
+                            left: 1px;
+                            width: 230px;
+                            color: $b-white;
+                            background-image: linear-gradient(to right, $g-light-violet, $g-light-magenta);
+                            .option-row {
+                                position: relative;
+                                top: 3px;
+                                padding: 5px;
+                                h5 {
+                                    text-align: center;
+                                    padding: 5px;
+                                    font-size: 12px;
+                                }
+                                .price {
+                                    font-size: 25px;
+                                }
+                                .btn {
+                                    text-align: center;
+                                    display: block;
+                                    height: 30px;
+                                    width: 30px;
+                                    border-radius: 50%;
+                                    border: 1px solid $b-very-light-magenta-radio;
+                                }
+                            }
+                        }
+                        .input-message {
+                            width: 280px;
+                            position: relative;
+                            top: -27px;
+                            left: 10px;
+                            background-color: white;
+                            height: 40px;
+                            border-radius: 20px;
+                            .row {
+                                padding-top: 15px;
+                                margin-left: 20px;
+                                h5 {
+                                    color: $grayish-blue;
+                                    font-size: 12px;
+                                }
+                                .btn {
+                                    position: relative;
+                                    top: -10px;
+                                    margin-left: 110px;
+                                    display: block;
+                                    background-color: $b-very-dark-desaturated-violet;
+                                    height: 30px;
+                                    width: 30px;
+                                    border-radius: 50%;
+                                    border: 1px solid $b-very-dark-desaturated-violet;
+                                }
                             }
                         }
                     }
+                }
+            }
+            .text-cont {
+                margin: auto;
+                padding-top: 25%;
+                padding-right: 25%;
+                text-align: left;
+                h1 {
+                    color: $very-dark-desatviolet;
+                    font-size: 35px;
+                    font-weight: $font-weight7;
+                }
+                h3 {
+                    color: $dark-grayish-violet;
+                    font-size: 22px;
+                    font-weight: $font-weight4;
                 }
             }
         }

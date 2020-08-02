@@ -1,0 +1,165 @@
+.row .col-lg-6 .phone-cont {
+  height: 630px;
+  width: 330px;
+  background-color: blue;
+  z-index: 2;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.row .col-lg-6 .phone-cont::before {
+  height: 800px;
+  width: 400px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background-color: lightcoral;
+  z-index: 1;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont {
+  border-radius: 30px;
+  position: relative;
+  top: 12px;
+  height: 600px;
+  width: 300px;
+  background-color: lightblue;
+  z-index: 3;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content {
+  position: relative;
+  left: -30px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .top-bar {
+  z-index: 4;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  background-color: red;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .top-bar .top-notch {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 0;
+  background-color: blue;
+  z-index: 5;
+  height: 25px;
+  width: 150px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .top-bar .row {
+  color: white;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .top-bar .row img {
+  height: 40px;
+  width: 40px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message {
+  width: 200px;
+  margin: 10px auto;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-left {
+  position: relative;
+  left: -15px;
+  background-color: purple;
+  color: white;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 20px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-left h5 {
+  padding: 7px 3px;
+  font-size: 12px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-left .option-row {
+  position: relative;
+  top: 3px;
+  padding: 5px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-left .option-row h5 {
+  padding: 9px;
+  font-size: 12px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-left .option-row .btn {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-right-text {
+  background-color: orange;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-right-first {
+  margin-top: 20px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-right-last {
+  margin-bottom: 20px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-right {
+  position: relative;
+  right: -75px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-right h5 {
+  padding: 7px 3px;
+  font-size: 12px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .message-right .row img {
+  margin: auto 8px;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .input-message {
+  width: 280px;
+  position: relative;
+  top: 40px;
+  left: 10px;
+  background-color: white;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .input-message .row {
+  padding-top: 5px;
+  margin-left: 20px;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .input-message .row h5 {
+  color: gray;
+}
+
+.row .col-lg-6 .phone-cont .int-phone-cont .content .input-message .row .btn {
+  margin-left: 50px;
+  display: block;
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+}

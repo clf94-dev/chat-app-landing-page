@@ -20,7 +20,17 @@
         background-color: $b-light-grayish-violet;
         padding-top: 50px;
         font-family: $font-family;
+        .bg {
+            width: 400px;
+            height: 600px;
+            background-image: linear-gradient(to top, $g-light-violet, $g-light-magenta);
+            border-bottom-left-radius: 200px;
+            border-bottom-right-radius: 200px;
+            position: absolute;
+            top: 0;
+        }
         .row {
+            padding-bottom: 5%;
             .col-lg-6 {
                 .phone-cont {
                     opacity: 0;
@@ -245,9 +255,10 @@
             opacity: 1;
         }
     }
-    /*
-    @media screen and (max-width:400px) {
+    
+    @media screen and (max-width:789px) {
         .text-cont {
-            padding-bottom: 154px;
+            margin-left: 10% !important;
+            text-align: center !important;
         }
-    }*/
+    }

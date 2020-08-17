@@ -4,6 +4,20 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+body .bg {
+  width: 400px;
+  height: 600px;
+  background-image: linear-gradient(to top, #8838ff, #e942ff);
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  position: absolute;
+  top: 0;
+}
+
+body .row {
+  padding-bottom: 5%;
+}
+
 body .row .col-lg-6 .phone-cont {
   opacity: 0;
   height: 630px;
@@ -258,9 +272,9 @@ body .row .col-lg-6 .text-cont h3 {
   }
 }
 
-/*
-    @media screen and (max-width:400px) {
-        .text-cont {
-            padding-bottom: 154px;
-        }
-    }*/
+@media screen and (max-width: 789px) {
+  .text-cont {
+    margin-left: 10% !important;
+    text-align: center !important;
+  }
+}
